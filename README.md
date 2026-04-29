@@ -1,10 +1,10 @@
-# NRC7394 Development Tools
+# NRC7394 Tools
 
 ## 🚧 Service Notice
 
 **This service is currently in preparation phase.**
 
-We are working diligently to prepare the NRC7394 development tools for official release. Please check back later for updates on the official launch.
+We are working diligently to prepare the NRC7394 tools for official release. Please check back later for updates on the official launch.
 
 For the latest information and announcements, please visit our [GitHub Discussions](https://github.com/newracom/nrc7394_tools/discussions).
 
@@ -12,7 +12,7 @@ For the latest information and announcements, please visit our [GitHub Discussio
 
 ## About
 
-NRC7394 Non-Release Development Tools Access Portal
+NRC7394 Tools Access Portal
 
 ## Contact
 

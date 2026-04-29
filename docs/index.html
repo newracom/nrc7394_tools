@@ -1,26 +1,345 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>NRC7394 Tool Download Request</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRC7394 Development Tools - Access Request | Newracom</title>
+    <meta name="description" content="Professional access to NRC7394 development tools and SDK. Secure download with licensing agreement.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #ff6b35 0%, #e67e22 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #d35400 0%, #e67e22 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .logo {
+            height: 60px;
+            margin: 0 auto 20px;
+            display: block;
+            filter: brightness(0) invert(1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #d35400;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #ff6b35;
+            padding-bottom: 10px;
+        }
+
+        .agreement-box {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .agreement-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .agreement-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #e9ecef;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .agreement-list li:last-child {
+            border-bottom: none;
+        }
+
+        .agreement-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 15px;
+            color: #28a745;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border: 2px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .warning-box .warning-title {
+            font-weight: bold;
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #ff6b35 0%, #e67e22 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #ff6b35;
+            border: 2px solid #ff6b35;
+        }
+
+        .btn-secondary:hover {
+            background: #ff6b35;
+            color: white;
+        }
+
+        .footer {
+            background: #d35400;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .btn {
+                display: block;
+                margin: 10px auto;
+                max-width: 300px;
+            }
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #ffcc99 0%, #ffb366 100%);
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .service-notice {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .service-notice h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .service-notice p {
+            margin: 0;
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+    </style>
 </head>
 <body>
-  <h1>NRC7394 Tool Download Request</h1>
-  <p>Please read the agreement before requesting access.</p>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <img src="https://newracom.com/hubfs/Newracom%20New%20Logo%20522%20x%20128.png" alt="Newracom Logo" class="logo">
+                <h1>NRC7394 Development Tools</h1>
+                <p class="subtitle">Professional Development Tool Access Portal</p>
+            </div>
+            
+            <div class="content">
+                <div class="service-notice">
+                    <h3>🚧 Service Preparation Notice</h3>
+                    <p>This service is currently in preparation phase. We will announce the official launch soon. Please check back for updates.</p>
+                </div>
+                
+                <div class="intro">
+                    <p>Welcome to the <span class="highlight">NRC7394 Development Tools</span> access portal. 
+                    Please review the licensing agreement carefully before proceeding with your access request.</p>
+                </div>
 
-  <h2>Agreement</h2>
-  <ul>
-    <li>This tool is provided as-is.</li>
-    <li>Redistribution is not allowed.</li>
-    <li>Support is provided through GitHub Discussions.</li>
-  </ul>
+                <div class="section">
+                    <h2>📋 Licensing Agreement</h2>
+                    <div class="agreement-box">
+                        <div class="warning-box">
+                            <div class="warning-title">⚠️ Important Notice</div>
+                            By requesting access to these tools, you acknowledge and agree to the following terms and conditions.
+                        </div>
+                        
+                        <ul class="agreement-list">
+                            <li><strong>As-Is Provision:</strong> The NRC7394 development tools are provided "as-is" without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement.</li>
+                            
+                            <li><strong>Redistribution Prohibited:</strong> You may not distribute, sublicense, sell, or transfer these tools to any third party without explicit written consent from Newracom Inc.</li>
+                            
+                            <li><strong>Confidentiality:</strong> The tools contain proprietary and confidential information. You agree to maintain the confidentiality of all provided materials.</li>
+                            
+                            <li><strong>Technical Support:</strong> Official support is provided exclusively through our GitHub Discussions platform. Commercial support options are available upon request.</li>
+                            
+                            <li><strong>Compliance:</strong> You agree to use these tools in compliance with all applicable laws and regulations, including export control laws.</li>
+                            
+                            <li><strong>Liability Limitation:</strong> In no event shall Newracom Inc. be liable for any direct, indirect, incidental, special, exemplary, or consequential damages.</li>
+                        </ul>
+                    </div>
+                </div>
 
-  <p>
-    <a href="https://forms.gle/CRjrRvaPMFXjRsmQ7">NRC7394 Tool Download Request Form Access</a>
-  </p>
+                <div class="section">
+                    <h2>🚀 Getting Started</h2>
+                    <p>Once you submit your request and it's approved, you will receive:</p>
+                    <ul style="margin: 20px 0; padding-left: 30px;">
+                        <li>Download link for the NRC7394 Tools</li>
+                        <li>Documentation and user guides</li>
+                        <li>Access to community support forums</li>
+                    </ul>
+                </div>
 
-  <p>
-    <a href="https://github.com/newracom/nrc7394_tools/discussions">Support / Q&A</a>
-  </p>
+                <div class="cta-section">
+                    <h3 style="margin-bottom: 20px; color: #d35400;">Ready to proceed?</h3>
+                    <div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 6px; padding: 25px; margin-bottom: 30px; text-align: left;">
+                        <h4 style="color: #d35400; margin-bottom: 15px; font-size: 1.1rem;">📋 Confirmation Statement</h4>
+                        <p style="margin-bottom: 15px; font-size: 0.95rem; line-height: 1.5;">
+                            By requesting access, I confirm that:
+                        </p>
+                        <ul style="font-size: 0.9rem; line-height: 1.6; color: #555; margin-left: 20px;">
+                            <li style="margin-bottom: 8px;">I will use these tools solely for legitimate development purposes with Newracom products</li>
+                            <li style="margin-bottom: 8px;">I agree to the licensing terms and confidentiality requirements outlined above</li>
+                            <li style="margin-bottom: 8px;">I will comply with all applicable laws and export regulations</li>
+                            <li style="margin-bottom: 8px;">I understand that access approval is at Newracom's discretion</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="https://forms.gle/CRjrRvaPMFXjRsmQ7" class="btn btn-primary">
+                        📥 Request Tool Access
+                    </a>
+                    </a>
+                    
+                    <a href="https://github.com/newracom/nrc7394_tools/discussions" class="btn btn-secondary">
+                        💬 Community Support
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="footer">
+                <p>&copy; 2026 Newracom Inc. All rights reserved.</p>
+                <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.8;">
+                    NRC7394 Development Tools
+                </p>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="mailto:support@newracom.com">Contact Support</a>
+                    <a href="https://github.com/newracom/nrc7394_tools" target="_blank">GitHub Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
